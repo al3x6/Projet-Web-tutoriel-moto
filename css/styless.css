@@ -38,6 +38,48 @@ main {
     text-align: center;
 }
 
+/********************* importance ***************************/
+.main_importance {
+    height: 100vh; /* Occupe la hauteur totale de la fenêtre */
+    background-image: url('../images/moto.jpg'); /* Chemin vers votre image */
+    background-size: cover; /* Adapte l'image à l'écran */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Évite la répétition de l'image */
+}
+
+.main_importance .importance {
+    position: relative;
+    text-align: left;
+    color: #fff;
+}
+
+main .importance .overlay {
+    position: absolute;
+    margin-top: 50px;
+    left: 10%;
+    transform: translate(-10%, -10%);
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+main .importance .overlay h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+main .importance .overlay p {
+    line-height: 1.6;
+    font-size: 1em;
+}
+
+/********************* Chaine ***************************/
+
+
+
+/********************* Content ***************************/
+
 main .content {
     display: flex;
     justify-content: space-between;
@@ -61,7 +103,7 @@ footer {
     background-color: #111;
     text-align: center;
     padding: 10px 0;
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0;
 }
