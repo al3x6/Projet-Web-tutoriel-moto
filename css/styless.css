@@ -38,6 +38,42 @@ main {
     text-align: center;
 }
 
+/********************* acceuil ***************************/
+
+.main_acceuil {
+    height: 100vh; /* Occupe la hauteur totale de la fenêtre */
+    background-image: url('../images/accueil_arriere.jpg'); /* Chemin vers votre image */
+    background-size: cover; /* Adapte l'image à l'écran */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Évite la répétition de l'image */
+}
+
+.main_acceuil .accueil {
+    position: relative;
+    color: #fff;
+}
+
+.main_acceuil .accueil .bloc_acceuil {
+    position: absolute;
+    margin-top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.main_acceuil .accueil .bloc_acceuil h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.main_acceuil .accueil .bloc_acceuil p {
+    line-height: 1.6;
+    font-size: 1em;
+}
+
 /********************* importance ***************************/
 .main_importance {
     height: 100vh; /* Occupe la hauteur totale de la fenêtre */
@@ -53,7 +89,7 @@ main {
     color: #fff;
 }
 
-main .importance .overlay {
+.main_importance .importance .overlay {
     position: absolute;
     margin-top: 50px;
     left: 10%;
@@ -64,23 +100,25 @@ main .importance .overlay {
     border-radius: 10px;
 }
 
-main .importance .overlay h1 {
+.main_importance .importance .overlay h1 {
     font-size: 2em;
     margin-bottom: 10px;
 }
 
-main .importance .overlay p {
+.main_importance .importance .overlay p {
     line-height: 1.6;
     font-size: 1em;
 }
 
 /********************* Chaine ***************************/
 
+main .container_chaine{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-
-/********************* Content ***************************/
-
-main .content {
+main .chaine {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -88,13 +126,124 @@ main .content {
     gap: 20px;
 }
 
-main .content img, main .content video {
-    max-width: 100%;
-    width: 48%;
+main .chaine .video_container, main .chaine .text_container {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    flex: 1;
 }
 
-main .content .text {
+main .chaine .video_container iframe {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+main .chaine .text_container {
     width: 48%;
+}
+main .chaine .text_container p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/********************* Vidange ***************************/
+
+.vidange_table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+
+.vidange_table td {
+    vertical-align: top;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.vidange_table td h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.vidange_table td img, .vidange_table td iframe {
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.vidange_table td p {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/********************* Ampoule ***************************/
+
+main .container_ampoule{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main .ampoule {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+main .ampoule .video_container, main .ampoule .text_container {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    flex: 1;
+}
+
+main .ampoule .video_container iframe {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+main .ampoule .text_container {
+    width: 48%;
+}
+main .ampoule .text_container p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/********************* Freins ***************************/
+
+.freins_table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+
+.freins_table td {
+    vertical-align: top;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.freins_table td h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.freins_table td img, .freins_table td iframe {
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.freins_table td p {
+    margin-top: 10px;
+    line-height: 1.6;
 }
 
 /*********************  footer ***************************/
